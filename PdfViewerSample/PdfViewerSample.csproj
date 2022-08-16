@@ -16,10 +16,4 @@
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.44" />
     <PackageReference Include="Syncfusion.Blazor.PdfViewerServer.OSX" Version="20.2.0.44" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Remove="wwwroot\data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\data\" />
-  </ItemGroup>
 </Project>

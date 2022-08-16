@@ -1,15 +1,17 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using PdfViewerSample.Data;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSyncfusionBlazor();
 
 var app = builder.Build();
+
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("XXXXX");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

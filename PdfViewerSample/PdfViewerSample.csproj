@@ -6,4 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Syncfusion.Blazor.PdfViewerServer.OSX" />
+    <None Remove="Syncfusion.Blazor.Themes" />
+    <None Remove="Syncfusion.Blazor.Inputs" />
+    <None Remove="Syncfusion.Blazor.PdfViewerServer.Linux" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.44" />
+    <PackageReference Include="Syncfusion.Blazor.PdfViewerServer.OSX" Version="20.2.0.44" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\data\" />
+  </ItemGroup>
 </Project>
